@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch문</title>
+
+    <script lang="java">
+        // switch(변수/수식){
+        //     case 값 n :
+        //         수행할 문장 n ; break;
+        //     default :
+        //         수행할 문장
+        
+        //     }
+    
+    
+        var n = prompt("1~4의 번호를 입력하십시오 ");
+    
+        switch(n){
+            case "1" : document.write("예금 조회를 선택하셨습니다."); break;
+            case "2" : document.write("예금 출금을 선택하셨습니다."); break;
+            case "3" : document.write("예금 입금을 선택하셨습니다."); break;
+            case "4" : document.write("예금 이체를 선택하셨습니다."); break;
+            default :  document.write("번호를 잘못 누르셨습니다."); break;
+        }
+    
+        var m = prompt("메뉴를 선택하세요")
+    
+        switch(menu){
+            case "P" :
+            case "p" :
+            document.write("피자를 주문했습니다."); break;
+            case "S" :
+            case "s" :
+            document.write("스파게티를 주문했습니다."); break;
+            case "D" :
+            case "d" :
+            document.write("음료를 주문했습니다."); break;
+            case "R" :
+            case "r" :
+            document.write("리조또를 주문했습니다."); break;
+            default: document.write("메뉴에 없습니다."); break;
+        }
+    
+    
+    </script>
+
+
+</head>
+<body>
+    
+</body>
+</html>

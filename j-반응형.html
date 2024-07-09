@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형</title>
+
+    <style type="text/css">
+        body{background-color: #000;}
+        h1{color: #fff;}
+        .wrap{
+            /* width: 1000px;  */
+            /* width: 90%; */
+            width: 90vw;
+            height: 500px;
+            border: 5px solid #666;
+            box-sizing: border-box;
+        }
+
+        /* 
+        가로방향 더 길면 배경색을 red
+        세로방향 더 길면 배경색을 green */
+
+        /* @media screen 이 반응형을 줌. */
+
+
+        @media screen and (orientation : landscape){ /* orientation : landscape 창 가로 방향이 더 클 때 */
+            body{background-color: tomato;}
+            h1{color: yellowgreen;}
+        }
+
+        @media screen and (orientation : portrait) { /*portrait ;세로 */ /* orientation : portrait 창 세로 방향이 더 클 때 */
+            body{background-color: teal;}
+            h1{color: tomato;}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap"></div>
+    <h1>@ media Query</h1>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script lang="java">
+        $(function(){
+
+            $(".click").click(function(){
+
+                var input = prompt("숫자(1~5)를 입력하세요");
+
+                switch(input){
+                    case "1" :$(this).css({color : "blue"}); break;
+                    case "2" :$(this).css({color : "yellow"}); break;
+                    case "3" :$(this).css({color : "green"}); break;
+                    case "4" :$(this).css({color : "purple"}); break;
+                    case "5" :$(this).css({color : "pink"}); break;
+                    default :$(this).css({color : "black"});
+                }
+            })
+        })//j
+
+
+        var a = prompt("숫자1을 입력하세요")
+        var b = prompt("숫자2를 입력하세요")
+        var op = prompt("연산자를 입력해 주세요 + - * /")
+
+        switch(op){
+            case "+" : document.write(a+b); break;
+            case "-" : document.write(a-b); break;
+            case "*" : document.write(a*b); break;
+            case "/" : document.write(a/b); break;
+            default :  document.write("연산자를 잘못 입력하셨습니다");
+        }
+
+    </script>
+
+    <style>
+        p{
+        color: tomato;
+        font-size: 30px;
+        font-weight: 800;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <p class="click">click me!</p>
+
+</body>
+</html>
